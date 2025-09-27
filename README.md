@@ -1,9 +1,13 @@
 LAB05
 
 Ahumada Soles Carlos
+
 Calluchi Patiño Eduardo
+
 Principe Huamanchumo Luis
+
 Sandoval Vargas Robert
+
 Asencio Correa Damer
 
 instrucciones
