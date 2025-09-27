@@ -4,11 +4,11 @@ resource "docker_container" "nginx_proxy" {
   image = "nginx:1.29.1-perl"
 
   networks_advanced {
-    name = docker_network.appnetwork.name
+    name = docker_network.app_net.name
   }
 
   ports {
-    external = 50010
+    external = 5010
     internal = 8080
   }
 

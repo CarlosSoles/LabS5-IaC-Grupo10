@@ -24,7 +24,7 @@ resource "docker_container" "app1" {
 }
 
 resource "docker_container" "app2" {
-  name  = "app22"
+  name  = "app2"
   image = "nginx:1.29.1-perl"
 
   ports {
