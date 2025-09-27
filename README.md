@@ -1,33 +1,31 @@
-LAB05
-
+# LAB05
+# Integrantes:
 Ahumada Soles Carlos
+1. Calluchi Patiño Eduardo
 
-Calluchi Patiño Eduardo
+2. Principe Huamanchumo Luis
 
-Principe Huamanchumo Luis
+3. Sandoval Vargas Robert
 
-Sandoval Vargas Robert
+4. Asencio Correa Damer
 
-Asencio Correa Damer
-
-instrucciones
+# instrucciones
 1. Posicionarse en la carpeta del proyecto Ansible:
 
-bash
+```bash
 cd ansible
-
+```
 
 2. Verificar el inventario:
 
-bash
+```bash
 ansible-inventory -i inventory.ini --list
-
-
+```
 3. Probar conectividad con los nodos:
 
-bash
+```bash
 ansible all -i inventory.ini -m ping
-
+```
 
 4. Ejecutar el playbook del balanceador de carga:
 
