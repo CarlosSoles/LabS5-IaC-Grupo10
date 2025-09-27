@@ -8,11 +8,11 @@ Primero instalamos Terraform Luego lo agregamos al entorno de variables del sist
 
 # Integrantes:
 
-1. Ahumada Soles Carlos
-2. Calluchi Patiño  Eduardo
-3. Principe Huamanchumo Luis
-4. Sandoval Vargas Robert
-5. Asencio Correa Damer
+1. Ahumada Soles, Carlos
+2. Calluchi Patiño, Eduardo
+3. Correa Asencio, Damer
+4. Principe Huamanchumo, Luis
+5. Sandoval Vargas, Robert
 
 # Instrucciones
 
