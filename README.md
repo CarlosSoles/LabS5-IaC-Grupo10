@@ -1,13 +1,15 @@
 # LAB05
 # Integrantes:
-Ahumada Soles Carlos
-1. Calluchi Patiño Eduardo
 
-2. Principe Huamanchumo Luis
+1. Ahumada Soles Carlos
+   
+2. Calluchi Patiño Eduardo
 
-3. Sandoval Vargas Robert
+3. Principe Huamanchumo Luis
 
-4. Asencio Correa Damer
+4. Sandoval Vargas Robert
+
+5. Correa Asencio Damer
 
 # instrucciones
 1. Posicionarse en la carpeta del proyecto Ansible:
@@ -29,11 +31,12 @@ ansible all -i inventory.ini -m ping
 
 4. Ejecutar el playbook del balanceador de carga:
 
-bash
+```bash
 ansible-playbook -i inventory.ini playbook.yaml
-
+```
 
 5. Una vez desplegado, probar acceso al balanceador desde el host:
 
-bash
+```bash
 curl http://localhost:5010
+```
