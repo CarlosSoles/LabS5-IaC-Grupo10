@@ -10,6 +10,11 @@ resource "docker_container" "app1" {
     external = var.ngnix_app1_ports_external
   }
 
+  volumes {
+    host_path = abspath("${path.module}/../host_volumes/web/app_1")
+    container_path = "/usr/share/nginx/html"
+  }
+
   networks_advanced{
     name = docker_network.app_net.name
   }
@@ -27,6 +32,11 @@ resource "docker_container" "app2" {
     external = var.ngnix_app2_ports_external
   }
 
+  volumes {
+    host_path = abspath("${path.module}/../host_volumes/web/app_2")
+    container_path = "/usr/share/nginx/html"
+  }
+
   networks_advanced{
     name = docker_network.app_net.name
   }
@@ -42,6 +52,11 @@ resource "docker_container" "app3" {
   ports {
     internal = 80
     external = var.ngnix_app3_ports_external
+  }
+
+  volumes {
+    host_path = abspath("${path.module}/../host_volumes/web/app_3")
+    container_path = "/usr/share/nginx/html"
   }
 
   networks_advanced{

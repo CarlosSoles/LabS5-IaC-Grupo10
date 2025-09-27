@@ -1,15 +1,15 @@
-# proxy.tf
+
 resource "docker_container" "nginx_proxy" {
   name  = "nginx_proxy"
   image = "nginx:1.29.1-perl"
 
-  ports {
-    external = 50010
-    internal = 10
+  networks_advanced {
+    name = docker_network.appnetwork.name
   }
 
-  networks_advanced {
-    name = docker_network.labnet.name
+  ports {
+    external = 50010
+    internal = 8080
   }
 
   volumes {
